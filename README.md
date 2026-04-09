@@ -35,7 +35,7 @@ A structured 30-day course designed for someone with no programming background, 
 |-----|-------|------|
 | 15 | [HTTP Requests & REST APIs](week3/day15-http-apis.md) | `week3/day15-http-apis.md` |
 | 16 | [Environment Variables & Secrets Management](week3/day16-env-secrets.md) | `week3/day16-env-secrets.md` |
-| 17 | [Calling the OpenAI API](week3/day17-openai-api.md) | `week3/day17-openai-api.md` |
+| 17 | [Calling LLM APIs (OpenAI, Anthropic, Gemini)](week3/day17-openai-api.md) | `week3/day17-openai-api.md` |
 | 18 | [Prompt Engineering in Code](week3/day18-prompt-engineering.md) | `week3/day18-prompt-engineering.md` |
 | 19 | [Working with Data: Pandas Basics](week3/day19-pandas-basics.md) | `week3/day19-pandas-basics.md` |
 | 20 | [Async Python & Concurrency](week3/day20-async-python.md) | `week3/day20-async-python.md` |
@@ -68,7 +68,10 @@ All complete, runnable code solutions are in the [`solutions/`](solutions/) dire
 - A computer with internet access
 - Python 3.10+ installed
 - A code editor (VS Code recommended)
-- An OpenAI API key (from Day 17 onward) — a free-tier or $5 credit is sufficient
+- At least one LLM API key (from Day 17 onward):
+  - **OpenAI** — [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+  - **Anthropic (Claude)** — [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
+  - **Google Gemini** — [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey) (free tier available)
 
 ## How to Use This Course
 
@@ -98,5 +101,5 @@ ai-course-env\Scripts\activate
 source ai-course-env/bin/activate
 
 # Install core packages (needed from Week 3 onward)
-pip install openai requests python-dotenv pandas langchain chromadb
+pip install openai anthropic google-generativeai requests python-dotenv pandas langchain langchain-openai langchain-anthropic langchain-google-genai chromadb
 ```
